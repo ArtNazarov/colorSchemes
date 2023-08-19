@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<head>
+    <title>Sample</title>
+    <style>
+.list-group-item {
+  position: relative;
+  display: block;
+  padding: var(--bs-list-group-item-padding-y) var(--bs-list-group-item-padding-x);
+  color: var(--bs-list-group-color);
+  text-decoration: none;
+  background-color: #E1F5FE;
+  border: var(--bs-list-group-border-width) solid var(--bs-list-group-border-color);
+       -moz-clip-path: polygon(94% 0, 100% 50%, 94% 100%, 0% 100%, 4% 49%, 0% 0%);
+  clip-path: polygon(94% 0, 100% 50%, 94% 100%, 0% 100%, 4% 49%, 0% 0%);
+    
+    transition:color 0.3s, background-color 0.3s;
+  }
+  .list-group-item:hover {
+  color:white;   
+  background-color: #673AB7;
+  
+  }
+  
+.list-group-item + .list-group-item.active {
+  margin-top: calc(-1 * var(--bs-list-group-border-width));
+  border-top-width: var(--bs-list-group-border-width);
+   -moz-clip-path: polygon(94% 0, 100% 50%, 94% 100%, 0% 100%, 4% 49%, 0% 0%);
+  clip-path: polygon(94% 0, 100% 50%, 94% 100%, 0% 100%, 4% 49%, 0% 0%);
+}
+  .page-link {
+  position: relative;
+  display: block;
+  padding: var(--bs-pagination-padding-y) var(--bs-pagination-padding-x);
+  font-size: var(--bs-pagination-font-size);
+  color: white;
+  text-decoration: none;
+  background-color: #1ABC9C;
+  border: var(--bs-pagination-border-width) solid var(--bs-pagination-border-color);
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; 
+    -moz-clip-path:polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+}
+  .page-link:hover {
+  
+  color:white;
+  background-color:blue;
+  
+}
+  .page-link.active, .active > .page-link {
+  z-index: 3;
+  color: var(--bs-pagination-active-color);
+  background-color: var(--bs-pagination-active-bg);
+  border-color: var(--bs-pagination-active-border-color);
+  border-radius: 50% !important;
+}
+   
+  div#content > div.row > div.col-sm:nth-child(2)  {
+        padding:10px; margin:5px;
+     -webkit-clip-path:polygon(0% 0%, 100% 0%, 100% 93%, 87% 93%, 87% 100%, 68% 93%, 0 91%);
+            clip-path: polygon(0% 0%, 100% 0%, 100% 93%, 87% 93%, 87% 100%, 68% 93%, 0 91%);
+    background-color:#B3E5FC;
+    transition: color 0.3s;
+  }
+  div#content > div.row > div.col-sm:nth-child(2):hover {
+    background-color:#F1F8E9;
+  } 
+  
+  div.styled_content  {
+        padding:10px; margin:5px;
+            -webkit-clip-path:polygon(100% 0, 98% 8%, 100% 99%, 51% 100%, 0 100%, 0 0, 47% 0);
+       clip-path:  polygon(100% 0, 98% 8%, 100% 99%, 51% 100%, 0 100%, 0 0, 47% 0);
+    background-color:#E8F5E9;
+    transition: color 0.3s;
+  }
+  div.styled_content:hover {
+    background-color:#F1F8E9;
+  } 
+  a.in_header_link {font-size:4vh; color:#4C75A3}
+  a.in_header_link:hover {font-size:4vh; color:red}
+  .product-thumb { padding-top:10px;
+  border: thin solid #ffcb00;
+  border-bottom-left-radius: 10px;
+  border-top-right-radius: 10px;
+  margin-bottom: 5px;
+  }  .breadcrumb {background-color:#fff; padding:2px 0;}
+  li.breadcrumb-item {  width:30%;
+    overflow-x: hidden; overflow-y:hidden;
+white-space: wrap;
+text-overflow: ellipsis;}
+  li.breadcrumb-item a { overflow-y:hidden; 
+  font-size: 1.3vh;
+  color: #FFF;
+  font-family: 'Sofia Sans Extra Condensed';
+  text-shadow: 0px -1px 1px #fff;
+  background-color: #8bc34a;
+  clip-path: polygon(4% 0, 100% 0%, 97% 100%, 0% 100%);
+  padding-left: 10px;
+  padding-right: 10px;
+    transition:color 0.3s, background-color 0.3s;
+} li.breadcrumb-item a:hover {
+  font-size: 1.3vh; background-color:lightgreen;
+  color: red;
+  font-family: 'Sofia Sans Extra Condensed';
+}
+  h3 {font-family: 'Caveat', cursive; }
+  div.description p {font-family: 'Caveat', cursive; }
+  div.price > span.price-new {font-size:calc(12px + 1.2vh) !important; font-family: 'Caveat', cursive; }
+  h2 > span.price-new {font-family: 'Caveat', cursive; }
+  h1 { font-family: 'Sofia Sans Extra Condensed', sans-serif; font-size:calc(12px + 1.5vw); }
+  h4 a { word-break: break-word;
+-webkit-hyphens: auto;
+-moz-hyphens: auto;
+ hyphens: auto;
+ color:#2eac1c; font-family: 'Sofia Sans Extra Condensed', sans-serif; font-size:calc(12px + 1.5vw); }
+  h4 a:hover { color:#f00; font-family: 'Sofia Sans Extra Condensed', sans-serif; font-size:calc(12px + 1.5vw); transition: color .3s; }
+  h4 a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #f00;
+    transition: width .3s;
+}
+
+h4 a:hover::after {
+    width: 100%;
+    //transition: width .3s;
+}
+    </style>
+</head>
+<body>
+    <h1>Модуль настройки темы</h1>
+    <h4><a href="https://site.com">Link</a></h4>
+    <form id="colorScheme">
+        <input type='button' id='btnApplyColorScheme' value="Применить цвета"><br/>
+        <input type='button' id='btnSaveColorScheme' value="Сохранить оформление"><br/>
+        <input type='button' id='btnLoadColorScheme' value="Загрузить оформление"><br/>
+        <input type='button' id='btnRestoreDefColorScheme' value="Восстановить тему по умолчанию"><br/>
+    </form>
+    <script src="colorsJs.js" type="text/javascript"></script>
+    <script>
+        colorSwitcherTheme();
+    </script>
+</body>
